@@ -1,19 +1,23 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import theme from '../constants/theme';
+import {lightTheme,darkTheme} from '../constants/theme';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from "react-redux";
 import { ThemeProvider } from 'styled-components'
 import store, { persistedStore } from '../store';
 import StyledContainer from '../styled/StyledContainer';
-import App from './App';
+import App from '../App';
+import { LIGHT } from "../constants/labels";
 
 
 const Root = ()=>{
+    const themeSelector = store.getState().appState;
+    const light = themeSelector === LIGHT;
+    
     return (
         <Provider store = {store}>
             <PersistGate persistor = {persistedStore}>
-                <ThemeProvider theme = {theme}>
+                <ThemeProvider theme = {light ? lightTheme:darkTheme}>
                     <StyledContainer>
                         <Router>
                             <App/>

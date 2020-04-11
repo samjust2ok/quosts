@@ -1,0 +1,14 @@
+import React from 'react';
+import StyledHome from '../styled/StyledHome';
+
+
+const Home = ()=>{
+    return (
+        <StyledHome>
+            <h1>Hello</h1>
+        </StyledHome>
+    );
+}
+
+
+export default Home;

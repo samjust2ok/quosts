@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const StyledApp  = styled.div`
+const StyledNavigation  = styled.div`
     height:100%;
     width:100%;
-    
+
 `;
 
 
-export {StyledApp as default};
+export {StyledNavigation as default};
