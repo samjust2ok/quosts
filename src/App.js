@@ -7,7 +7,7 @@ import Home from './pages/Home';
 const App = ()=> {
   
   return ( 
-   <StyledApp>
+   <StyledApp className = "App">
        <Route path = '/' component = {Home}/> 
    </StyledApp>  
   );

@@ -13,17 +13,17 @@ const GlobalStyle = createGlobalStyle`
 
     *{
         will-change: background-color color;
-        transition: color .2s ease-in, background-color .2s ease-out;
+        transition: color .2s ease-in, background-color .2s ease-in;
     }
     html,body{
         margin:0;
+        font-size: 68.5%;
         padding:0;
         -webkit-user-select: none;
         -moz-user-select: -moz-none;
         -ms-user-select: none;
          user-select: none;
          font-family: Poppins, sans-serif;
-         /* font-family: 'Open Sans', sans-serif; */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
