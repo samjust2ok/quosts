@@ -24,4 +24,25 @@ const SecondaryButton = styled(Button)`
 
 `
 
-export { TertiaryButton, PrimaryButton, SecondaryButton}
+const BorderButton = styled(Button)`
+    height:${props=>props.height || '45px'};
+    width:${props=>props.width || '45px'};
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    border: 1px solid black;
+`;
+
+const DirectionButton = styled(Button)`
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: ${props=>props.theme.secondaryBackgroundColor};
+`;
+
+export { TertiaryButton, PrimaryButton, SecondaryButton, DirectionButton, BorderButton}

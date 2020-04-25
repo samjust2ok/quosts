@@ -20,7 +20,7 @@ function MainNavigation({index, currentIndex, setShowIndex, closeSelfNavigation}
                 </div>
                 <hr/>
                 <div className="ThemeControl">
-                    <ThemeControl/>
+                    <ThemeControl onChange = {closeSelfNavigation}/>
                 </div>
             </div>
             

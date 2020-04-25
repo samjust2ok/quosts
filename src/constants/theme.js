@@ -1,6 +1,6 @@
 export const lightTheme = {
     primaryBackgroundColor: '#EFF0F4',
-    secondaryBackgroundColor: '#fffff',
+    secondaryBackgroundColor: 'white',
     secondaryTextColor: '#B5C1D4',
     tertiaryTextColor: '#293039',
     primaryMainColor: '#298EE7',

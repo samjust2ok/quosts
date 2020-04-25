@@ -34,9 +34,19 @@ const GlobalStyle = createGlobalStyle`
         height:100%;
     }
 
-    .Scroll{
-        overflow-y:scroll;
+    .Scroll-Y{
+        overflow-y:auto;
         overflow-x:hidden;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar { 
+            display:none;
+        }
+    }
+
+    .Scroll-X{
+        overflow-y:hidden;
+        overflow-x:auto;
         overflow: -moz-scrollbars-none; 
         -ms-overflow-style: none;
         &::-webkit-scrollbar { 

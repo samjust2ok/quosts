@@ -25,6 +25,12 @@ export const devices = {
         }
     `,
 
+    scrollMatch: (...args)=> css`
+    @media (min-width:600px){
+        ${css(...args)}
+    }
+    `,
+
     tablet: (...args)=> css`
         @media (min-width:768px){
             ${css(...args)}

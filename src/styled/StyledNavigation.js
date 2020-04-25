@@ -6,10 +6,13 @@ const padding = 32;
 const StyledNavigation  = styled.div`
     position:fixed;
     top:0;
+    left:0;
+    right:0;
     width:100%;
     height: 100%;
     display: block;
     pointer-events: none;
+    z-index:100;
 
     .NavigationOverlay{
         position: absolute;

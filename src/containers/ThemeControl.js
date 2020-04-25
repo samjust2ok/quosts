@@ -5,12 +5,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setAppTheme } from '../actions/appActions';
 import StyledThemeControl from '../styled/StyledThemeControl';
 
-const ThemeControl = ()=>{
+const ThemeControl = ({onChange})=>{
     const themeSelector = useSelector(state=>state.appTheme);
     const isDark = themeSelector === DARK;
     const dispatch = useDispatch();
     const changeTheme = ()=>{
         dispatch(setAppTheme(isDark ? LIGHT : DARK))
+        onChange()
     }
 
     return (
