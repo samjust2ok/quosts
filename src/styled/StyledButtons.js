@@ -45,4 +45,11 @@ const DirectionButton = styled(Button)`
     background-color: ${props=>props.theme.secondaryBackgroundColor};
 `;
 
-export { TertiaryButton, PrimaryButton, SecondaryButton, DirectionButton, BorderButton}
+const RoundButton = styled(DirectionButton)`
+    height:${props=>props.height || '55px'};
+    width:${props=>props.width || '55px'};
+    position:relative;
+    overflow:hidden;
+`;
+
+export { TertiaryButton, PrimaryButton, SecondaryButton, RoundButton,DirectionButton, BorderButton}

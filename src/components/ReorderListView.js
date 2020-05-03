@@ -38,7 +38,7 @@ const ReorderListView = ({ items, component: Component, onOrderChange, contentHe
             let boxRefTop = event.target.getBoundingClientRect().top;
             let scrollRefTop = scrollContainerRef.current.scrollTop;
             
-            if((boxRefTop + HEIGHT ) >= scrollContainerHeight.current){
+            if((boxRefTop + HEIGHT * 1.5 ) >= scrollContainerHeight.current){
                 setScrollProps({scroll: scrollRefTop + HEIGHT})
             }else if((boxRefTop - HEIGHT/4) <= 0){
                 setScrollProps({scroll: scrollRefTop-HEIGHT})
@@ -50,7 +50,7 @@ const ReorderListView = ({ items, component: Component, onOrderChange, contentHe
                 setShouldScroll(true);
             }
         },{
-            delay: 300
+            // delay: 300
         })
 
 

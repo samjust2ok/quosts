@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import { devices } from '../utils/styledUtils';
 
 
 const StyledHome  = styled.div`
     height:100vh;
     width:100%;
     background:${props=>props.theme.primaryBackgroundColor};
-    padding: 16px;
     display:flex;
     justify-content:center;
     overflow:hidden;
